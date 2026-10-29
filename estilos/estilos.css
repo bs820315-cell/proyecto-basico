@@ -1,0 +1,329 @@
+/* Estilos para Volt Tecnología */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #101820;
+  color: #071b2a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pagina {
+  width: min(1100px, 100%);
+  min-height: 900px;
+  margin: 0 auto;
+  padding: 18px;
+  background: #f58220;
+  border: 5px solid #ff9b36;
+  border-radius: 28px;
+}
+
+.encabezado {
+  display: flex;
+  min-height: 145px;
+  overflow: hidden;
+  background: #0878d1;
+  border: 3px solid #102f49;
+  border-radius: 18px;
+}
+
+.logo {
+  display: flex;
+  flex: 0 0 28%;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background: #071d2c;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  max-width: 230px;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.encabezado-derecha {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 12px 0;
+}
+
+.encabezado h1 {
+  margin: 0 0 12px;
+  font-size: clamp(22px, 3vw, 34px);
+  font-weight: 500;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  width: min(440px, 100%);
+  margin-bottom: -2px;
+}
+
+.menu a {
+  flex: 1;
+  padding: 12px 8px;
+  color: #061c2d;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #092e4a;
+  background: #1688db;
+  font-size: 16px;
+}
+
+.menu a:first-child {
+  border-radius: 12px 0 0 0;
+}
+
+.menu a:last-child {
+  border-radius: 0 12px 0 0;
+}
+
+.menu a.activo,
+.menu a:hover {
+  background: #ff9a2f;
+}
+
+.bienvenida {
+  margin: 18px auto 26px;
+  width: 90%;
+}
+
+.bienvenida img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2.15 / 1;
+  object-fit: cover;
+  border: 3px solid #0a2539;
+}
+
+.productos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 2px 18px;
+}
+
+.producto {
+  display: block;
+  width: 27%;
+  background: #fff;
+}
+
+.producto img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.45 / 1;
+  object-fit: contain;
+  background: #fff;
+}
+
+.flecha {
+  padding: 4px;
+  border: 0;
+  background: transparent;
+  color: #102b3b;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+.flecha:hover {
+  color: #fff;
+}
+
+
+.contacto {
+  margin: 20px 6% 8px;
+  padding: 18px;
+  text-align: center;
+  background: #0878d1;
+  border: 2px solid #102f49;
+  border-radius: 12px;
+}
+
+.contacto h2 {
+  margin: 0 0 8px;
+}
+
+.boton-contacto {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 9px 16px;
+  color: #071b2a;
+  background: #ff9a2f;
+  border: 2px solid #102f49;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+
+
+/* Página de contacto */
+header {
+    background-color: #0875c9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid #163b58;
+    border-radius: 15px;
+}
+
+header h1 {
+    margin: 10px;
+}
+
+nav a {
+    display: inline-block;
+    color: #102b3b;
+    background-color: #f58220;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: white;
+}
+
+.contacto {
+    text-align: center;
+    padding: 20px;
+}
+
+.contacto h2 {
+    color: #0875c9;
+}
+
+.datos {
+    background-color: #f58220;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    border: 3px solid #163b58;
+    border-radius: 15px;
+}
+
+.datos a {
+    color: #003b70;
+}
+
+footer {
+    background-color: #0875c9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+/* Encabezado */
+header {
+    background-color: #0875c9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid #163b58;
+    border-radius: 15px;
+}
+
+nav a {
+    display: inline-block;
+    background-color: #f58220;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: white;
+}
+
+/* Catálogo de seis productos */
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 25px;
+}
+
+.producto {
+    background-color: #f58220;
+    border: 3px solid #163b58;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    color: #003b70;
+}
+
+.producto p {
+    font-size: 15px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #0875c9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 700px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .producto {
+        padding: 8px;
+    }
+
+    .producto img {
+        height: 130px;
+    }
+}
+
+@media (max-width: 420px) {
+    .catalogo {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
